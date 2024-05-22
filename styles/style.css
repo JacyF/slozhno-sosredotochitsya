@@ -1,5 +1,11 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
+/* ========================== WORK ON 'page' ========================== */
+
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  min-inline-size: 375px;
+  background-color: var(--main-bg-color, #000028);
+  color: var(--main-text-color, #F1B2CE);
+  font-family: var(--main-font, Arial, Helvetica, sans-serif);
 }
