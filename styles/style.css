@@ -3,9 +3,201 @@
 /* ========================== WORK ON 'page' ========================== */
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  min-inline-size: 375px;
+  padding: var(--main-gap);
+  background-image: url(../images/cover-image-dark.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   background-color: var(--main-bg-color, #000028);
   color: var(--main-text-color, #F1B2CE);
   font-family: var(--main-font, Arial, Helvetica, sans-serif);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* ========================== WORK ON 'header' ========================== */
+
+.header {
+  position: relative;
+  display: grid;
+  gap: calc(4 * var(--main-gap));
+  margin-block-end: calc(5* var(--main-gap));
+}
+
+.decorated-zone::before {
+  position: absolute;
+  content: '';
+  inline-size: 25px;
+  block-size: 25px;
+  border-inline-start: 1px solid var(--accent-color, #FF0070);
+  border-block-end: 1px solid var(--accent-color, #FF0070);
+  inset-block-end: 0;
+}
+
+.decorated-zone::after {
+  position: absolute;
+  content: '';
+  inline-size: 25px;
+  block-size: 25px;
+  border-inline-end: 1px solid var(--accent-color, #FF0070);
+  border-block-start: 1px solid var(--accent-color, #FF0070);
+  inset-inline-end: 0;
+  inset-block-start: 0;
+}
+
+.decorated-element {
+  justify-self: end;
+  color: var(--accent-color, #FF0070);
+}
+
+.decorated-element::before {
+  content: "REC";
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: 25px;
+}
+
+.decorated-element::after {
+  content: '';
+  inline-size: 9px;
+  inset-block: 9px;
+  padding: 6px;
+  margin: 8px;
+  background-color: var(--accent-color, #FF0070);
+  clip-path: circle();
+}
+
+.header__theme-menu {
+  margin-block-end: calc(2.5 * var(--main-gap));
+  justify-self: end;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--main-gap);
+}
+
+.header__theme-menu-button {
+  height: 26px;
+  padding: 0 13px;
+  color: var(--accent-color, #FF0070);
+  background-color: transparent;
+  border: none;
+  text-transform: lowercase;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: 18px;
+  text-align: center;
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid var(--main-text-color, #F1B2CE);
+  cursor: pointer;
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid;
+}
+
+.header-title {
+  margin-block-end: calc(1.5 * var(--main-gap));
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  text-shadow: 4px 4px 0 var(--accent-color, #FF0070);
+  line-height: 95.7px;
+}
+
+.header-text {
+  margin-block-end: calc(5.5 * var(--main-gap));
+  justify-self: end;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 700;
+  line-height: 23.4px;
+}
+
+.title-decor {
+  background-color: var(--accent-color, #FF0070);
+  color: var(--main-bg-color, #000028);
+}
+
+/* ========================== WORK ON 'main' section ========================== */
+
+.main-content {
+  display: grid;
+  gap: calc(5 * var(--main-gap));
+  margin-block-end: calc(5 * var(--main-gap));
+}
+
+.content-section {
+  display: grid;
+  gap: calc(2 * var(--main-gap));
+}
+
+.block-text-section {
+  display: grid;
+  gap: var(--main-gap);
+}
+
+.content-section-title {
+  color: var(--accent-color, #FF0070);
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 700;
+  line-height: 23.4px;
+}
+
+.content-section-subtitle {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 700;
+  line-height: 23.4px;
+}
+
+.content-section-text {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 400;
+  line-height: 23.4px;
+}
+
+.content-section-text a {
+  text-shadow: 4px 4px 0 var(--accent-color, #FF0070);
+}
+
+.section-images {
+  display: flex;
+  flex-direction: column;
+  gap: calc(0.8* var(--main-gap));
+}
+
+.block-section-images {
+  display: grid;
+  gap: 10px;
+}
+
+img {
+  width: 100%;
+}
+
+footer {
+  position: relative;
+  display: grid;
+  min-height: 648px;
+}
+
+.footer-title {
+  align-self: center;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  text-shadow: 4px 4px 0 var(--accent-color, #FF0070);
+  line-height: 95.7px;
+  text-align: center;
 }

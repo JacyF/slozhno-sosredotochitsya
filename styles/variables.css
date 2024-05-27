@@ -9,5 +9,6 @@
   --main-bg-color: #000028;
   --main-text-color: #F1B2CE;
   --main-font:'IBM Plex mono';
-  --accent-text-bg-color: #FF0070;
+  --accent-color: #FF0070;
+  --main-gap: 10px;
 }
