@@ -147,6 +147,14 @@
   gap: var(--main-gap);
 }
 
+.block-section-subtitle {
+  color: var(--main-bg-color, #000028);
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 400;
+  line-height: 23.4px;
+}
+
 .content-section-title {
   color: var(--accent-color, #FF0070);
   font-family: inherit;
