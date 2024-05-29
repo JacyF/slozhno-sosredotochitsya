@@ -1,4 +1,4 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+/*                           Основные стили проекта. Это стили для темы, которую вы верстаете первой.                            */
 
 /* ========================== WORK ON 'page' ========================== */
 
@@ -110,6 +110,7 @@
 
 .header-title {
   margin-block-end: calc(1.5 * var(--main-gap));
+  justify-self: start;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   text-shadow: 4px 4px 0 var(--accent-color, #FF0070);
   line-height: 95.7px;
@@ -142,17 +143,24 @@
   gap: calc(2 * var(--main-gap));
 }
 
+.block-text-first {
+  display: grid;
+  gap: calc(2 * var(--main-gap));
+}
+
+.block-text-second {
+  display: grid;
+  gap: calc(2 * var(--main-gap));
+}
+
+.block-text-third {
+  display: grid;
+  gap: calc(2 * var(--main-gap));
+}
+
 .block-text-section {
   display: grid;
   gap: var(--main-gap);
-}
-
-.content-section-subtitle {
-  color: var(--main-bg-color, #000028);
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: 700;
-  line-height: 23.4px;
 }
 
 .block-section-subtitle {
@@ -197,23 +205,158 @@
 
 .block-section-images {
   display: grid;
-  gap: 10px;
+  gap: var(--main-gap);
 }
 
 img {
-  width: 100%;
+  inline-size: 100%;
 }
+
+/* ========================== WORK ON 'footer'  ========================== */
 
 footer {
   position: relative;
   display: grid;
-  min-height: 648px;
+  min-block-size: 648px;
 }
 
 .footer-title {
   align-self: center;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  text-shadow: 4px 4px 0 var(--accent-color, #FF0070);
+  text-shadow: 2px 2px 0 var(--accent-color, #FF0070);
   line-height: 95.7px;
   text-align: center;
 }
+
+
+/*                                                  GENERAL MEDIA QUERIES STYLE                                              */
+
+/* ####################################### WORK ON 'Tablet' mediaqueries ####################################### */
+
+
+@media (width >=560px) {
+
+  /* ######################## WORK ON 'page' ######################## */
+
+  .page {
+    padding: calc(2 * var(--main-gap));
+  }
+
+  /* ######################## WORK ON 'header' ######################## */
+
+  .header {
+    margin-block-end: calc(8 * var(--main-gap));
+  }
+
+  .decorated-element {
+    margin-block-end: calc(10.5 * var(--main-gap));
+  }
+
+  .header__theme-menu {
+    margin-block-end: calc(13.8 * var(--main-gap));
+  }
+
+  .header-title {
+    margin-block-end: calc(12.3 * var(--main-gap));
+    margin-left: -18px;
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+
+  .header-text {
+    inline-size: 364px;
+    margin-block-end: calc(16.3 * var(--main-gap));
+  }
+
+  /* ######################## WORK ON 'main' ######################## */
+
+  .main-content {
+    gap: calc(8 * var(--main-gap));
+    margin-block-end: calc(7.8 * var(--main-gap));
+  }
+
+  .first-section {
+    grid-template-columns: 236px 2fr;
+  }
+
+  .block-text-first {
+    display: flex;
+    flex-direction: column;
+    gap: calc(2 * var(--main-gap));
+  }
+
+  .block-text-second {
+    display: grid;
+    gap: calc(2 * var(--main-gap));
+  }
+
+  .content-section-title {
+    max-inline-size: 236px;
+  }
+
+  .third-section {
+    grid-template-columns: 236px 2fr;
+  }
+
+  .block-text-third {
+    display: grid;
+    gap: calc(2 * var(--main-gap));
+  }
+
+  /* ######################## WORK ON 'images' ######################## */
+
+  .section-images {
+    gap: calc(2 * var(--main-gap));
+  }
+
+  .block-section-images {
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    gap: calc(2 * var(--main-gap));
+  }
+
+  .sunset-position {
+    min-block-size: 192px;
+    grid-column: 1 / 3;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .ice-cream-position {
+    min-block-size: 441px;
+    object-fit: cover;
+    object-position: center;
+    grid-column: 3 / 4;
+    grid-row: -4 / -2;
+  }
+
+  .books-position {
+    min-block-size: 230px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .tape-position {
+    min-block-size: 568px;
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .street-position {
+    min-block-size: 318px;
+    grid-column: 2 / 4;
+    object-position: center;
+    object-fit: fill;
+  }
+
+  .footer {
+    min-block-size: 984px;
+  }
+
+  .footer-title {
+    line-height: 99px;
+  }
+}
+
+/* ******************************************** WORK ON 'desktop' mediaqueries ******************************************** */
