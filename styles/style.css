@@ -210,6 +210,8 @@
 
 img {
   inline-size: 100%;
+  /* min-block-size: fill; */
+
 }
 
 /* ========================== WORK ON 'footer'  ========================== */
@@ -356,7 +358,104 @@ footer {
 
   .footer-title {
     line-height: 99px;
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }
 
 /* ******************************************** WORK ON 'desktop' mediaqueries ******************************************** */
+
+@media (width > 1000px) {
+
+  /* ******************* WORK ON 'page' ******************* */
+
+  .page {}
+  /* ******************* WORK ON 'header' ******************* */
+
+  .header {
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-rows: auto; */
+    /* gap: 15px; */
+    gap: 5px;
+
+  }
+
+  .decorated-element {
+    /* justify-self: self-end; */
+    grid-column: 3 / 4;
+  }
+
+  .header__theme-menu {
+    height: 172px;
+    justify-self: center;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .header__theme-menu-list {
+
+    flex-direction: row;
+  }
+
+  .header-title {
+    /* align-self: self-end; */
+    grid-column: 1 / 4;
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+
+  .header-text {
+    width:491px;
+    /* height: 70px; */
+    grid-column: 2 / 4;
+    grid-row: 4 / 5;
+    margin-bottom: 114px
+  }
+
+  /* ******************* WORK ON 'main' section ******************* */
+
+  .first-section  {
+    grid-template-columns: 315px 1fr;
+  }
+
+  .content-section-title {
+    max-inline-size: 315px;
+  }
+
+  .content-section-subtitle  {
+    line-height: 23.4px;
+  }
+  .second-section {
+    /* grid-template-columns: repeat(3, 1fr); */
+  }
+
+  .block-text-second {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .block-text-section {
+    grid-template-rows: auto 1fr;
+    /* gap: var(--main-gap); */
+  }
+
+  .third-section {
+    grid-template-columns: 315px 1fr;
+  }
+
+  /* ******************* WORK ON 'header' ******************* */
+
+  .ice-cream-position,
+  .tape-position, .street-position {
+    min-block-size: 100%;
+  }
+
+
+
+  .footer {
+    min-block-size: 730px;
+    /* font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem); */
+  }
+  .footer-title {
+    line-height: 129.53px;
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    /* padding: 20px; */
+  }
+}
