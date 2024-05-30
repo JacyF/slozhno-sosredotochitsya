@@ -46,6 +46,17 @@
   --button-text-color: #353430;
   --main-font: 'IBM Plex mono'; 
   }
+  .page.theme_light {
+    --main-title-color: #FFC2E6;
+    --content-subtitle-text-color: #353430;
+    --content-title-color: #353430;
+    --main-text-color: #353430;
+    --accent-color: #FF8DCB;
+    --main-gap: 10px;
+    --button-text-color: #353430;
+    --main-font: 'IBM Plex mono';
+    background-image: url(../images/cover-image-light.png);
+  }
 }
 
 /* Остальные стили */
