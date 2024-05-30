@@ -253,7 +253,7 @@ footer {
 /* ####################################### WORK ON 'Tablet' mediaqueries ####################################### */
 
 
-@media (width >=560px) {
+@media (width >= 560px) {
 
   /* ######################## WORK ON 'page' ######################## */
 
@@ -330,7 +330,7 @@ footer {
   .block-section-images {
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(3, auto);
-    gap: calc(2 * var(--main-gap));
+    /* gap: calc(2 * var(--main-gap)); */
   }
 
   .sunset-position {

@@ -14,7 +14,6 @@
   --content-title-color: #353430;
   --main-text-color: #353430;
   --accent-color: #FF8DCB;
-  --main-gap: 10px;
   --button-text-color: #353430;
   --main-font: 'IBM Plex mono';
   background-image: url(../images/cover-image-light.png);
@@ -27,7 +26,6 @@
   --content-title-color: #353430;
   --main-text-color: #353430;
   --accent-color: #FF8DCB;
-  --main-gap: 10px;
   --button-text-color: #353430;
   --main-font: 'IBM Plex mono';   
 }
@@ -42,7 +40,6 @@
   --content-title-color: #353430;
   --main-text-color: #353430;
   --accent-color: #FF8DCB;
-  --main-gap: 10px;
   --button-text-color: #353430;
   --main-font: 'IBM Plex mono'; 
   }
@@ -52,9 +49,7 @@
     --content-title-color: #353430;
     --main-text-color: #353430;
     --accent-color: #FF8DCB;
-    --main-gap: 10px;
     --button-text-color: #353430;
-    --main-font: 'IBM Plex mono';
     background-image: url(../images/cover-image-light.png);
   }
 }
