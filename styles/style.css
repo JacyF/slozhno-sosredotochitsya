@@ -47,7 +47,7 @@
 
 .decorated-element {
   justify-self: end;
-  color: var(--accent-color, #FF0070);
+  color: var(--display-color, #FF0070);
 }
 
 .decorated-element::before {

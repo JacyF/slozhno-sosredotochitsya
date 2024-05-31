@@ -16,6 +16,7 @@
   --accent-color: #FF8DCB;
   --button-text-color: #353430;
   --main-font: 'IBM Plex mono';
+  --display-color: transparent;
   background-image: url(../images/cover-image-light.png);
 }
 
@@ -31,6 +32,19 @@
 }
 
 /* Остальные стили */
+
+.decorated-element {
+  color: var(--display-color);
+}
+
+.decorated-element::before {
+  color: var(--display-color);
+}
+
+.decorated-element::after {
+  background-color: var(--display-color);
+}
+
 
 @media (prefers-color-scheme: light) {
 :root {
@@ -52,6 +66,7 @@
     --button-text-color: #353430;
     background-image: url(../images/cover-image-light.png);
   }
+  
 }
 
 /* Остальные стили */
