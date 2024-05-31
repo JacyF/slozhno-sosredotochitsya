@@ -29,7 +29,7 @@
   grid-template-rows: min-content min-content min-content min-content;
   gap: calc(4* var(--main-gap));
   margin-block-end: calc(5* var(--main-gap));
-  min-height: 648px;
+  min-height: 668px;
   height: 100vh;
 }
 
@@ -264,7 +264,7 @@ footer {
   position: relative;
   display: grid;
   height: 100vh;
-  min-block-size: 648px;
+  min-block-size: 668px;
 }
 
 .footer-title {
