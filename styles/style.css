@@ -236,7 +236,9 @@ img {
 footer {
   position: relative;
   display: grid;
-  min-block-size: 648px;
+
+  block-size: 648px;
+  /* min-block-size: 648px; */
 }
 
 .footer-title {
