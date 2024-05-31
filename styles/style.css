@@ -14,7 +14,7 @@
   font-family: var(--main-font, Arial, Helvetica, sans-serif);
   font-size: 18px;
   font-weight: 400;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 /* ========================== WORK ON 'header' ========================== */
@@ -30,6 +30,7 @@
   gap: calc(4* var(--main-gap));
   margin-block-end: calc(5* var(--main-gap));
   min-height: 648px;
+  height: 100vh;
 }
 
 .decorated-zone::before {
@@ -262,6 +263,7 @@ img {
 footer {
   position: relative;
   display: grid;
+  height: 100vh;
   min-block-size: 648px;
 }
 
