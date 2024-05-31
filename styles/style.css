@@ -4,9 +4,7 @@
 
 .page {
   padding: var(--main-gap);
-  background-color: #000028;
   background-image: url(../images/cover-image-dark.png);
-  background-color: #000028;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -16,6 +14,21 @@
   font-size: 18px;
   font-weight: 400;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ========================== WORK ON 'header' ========================== */
 
