@@ -18,7 +18,7 @@
   --main-font: 'IBM Plex mono';
   --display-color: transparent;
   background-image: url(../images/cover-image-light.png);
-  --bg-color:#fff;
+  --bg-color:#FFEEF6;
 
 }
 
@@ -31,7 +31,7 @@
   --accent-color: #FF8DCB;
   --button-text-color: #353430;
   --main-font: 'IBM Plex mono';  
-  --bg-color:#fff;
+  --bg-color:#FFEEF6;
 }
 
 /* Остальные стили */
@@ -59,7 +59,7 @@
   --accent-color: #FF8DCB;
   --button-text-color: #353430;
   --main-font: 'IBM Plex mono';
-  --bg-color:#fff;
+  --bg-color:#FFEEF6;
   }
   .page.theme_light {
     --main-title-color: #FFC2E6;
@@ -68,7 +68,7 @@
     --main-text-color: #353430;
     --accent-color: #FF8DCB;
     --button-text-color: #353430;
-    --bg-color:#fff;
+    --bg-color:#FFEEF6;
     background-image: url(../images/cover-image-light.png);
   }
 }
