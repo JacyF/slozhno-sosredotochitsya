@@ -15,21 +15,6 @@
   font-weight: 400;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ========================== WORK ON 'header' ========================== */
 
 .header {
@@ -128,13 +113,12 @@ a:hover {
   cursor: pointer;
 }
 
-
 .header__theme-menu-button:focus-visible {
   border-bottom: 1px solid currentColor;
 }
 
 a:focus-visible {
-  outline: 1px solid currentColor; 
+  outline: 1px solid currentColor;
 }
 
 .header-title {
@@ -159,6 +143,21 @@ a:focus-visible {
   background-color: var(--accent-color, #FF0070);
   color: var(--subtitle-text-color, #000028);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ========================== WORK ON 'main' section ========================== */
 
