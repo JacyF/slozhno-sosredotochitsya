@@ -236,6 +236,7 @@ img {
 footer {
   position: relative;
   display: grid;
+  block-size: 100%;
   min-block-size: 648px;
 }
 
