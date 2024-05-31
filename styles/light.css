@@ -19,7 +19,6 @@
   --display-color: transparent;
   background-image: url(../images/cover-image-light.png);
   --bg-color:#FFEEF6;
-
 }
 
 :root.theme-light {

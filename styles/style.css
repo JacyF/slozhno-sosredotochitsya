@@ -145,21 +145,6 @@ a:focus-visible {
   color: var(--subtitle-text-color, #000028);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ========================== WORK ON 'main' section ========================== */
 
 .main-content {
@@ -250,9 +235,7 @@ img {
 footer {
   position: relative;
   display: grid;
-
   block-size: 648px;
-  /* min-block-size: 648px; */
 }
 
 .footer-title {
@@ -263,6 +246,17 @@ footer {
   text-align: center;
   color: var(--main-title-color, #DB00FF);
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*                                                  GENERAL MEDIA QUERIES STYLE                                              */
