@@ -223,6 +223,7 @@ a:focus-visible {
 
 .block-section-images {
   display: grid;
+  /* gap:calc(2 * var(--main-gap)); */
   gap: var(--main-gap);
 }
 
@@ -267,7 +268,8 @@ footer {
   /* ######################## WORK ON 'header' ######################## */
 
   .header {
-    margin-block-end: calc(8 * var(--main-gap));
+    /* margin-block-end: calc(8 * var(--main-gap)); */
+    margin-block-end: calc(4 * var(--main-gap));
   }
 
   .decorated-element {
@@ -292,8 +294,9 @@ footer {
   /* ######################## WORK ON 'main' ######################## */
 
   .main-content {
-    gap: calc(8 * var(--main-gap));
-    margin-block-end: calc(7.8 * var(--main-gap));
+    /* gap: calc(8 * var(--main-gap)); */
+    margin-bottom: 60px;
+    /* margin-block-end: calc(7.8 * var(--main-gap)); */
   }
 
   /* .first-section {
@@ -304,16 +307,16 @@ footer {
     grid-template-columns: 236px 2fr;
   }
 
-  .block-text-why {
+  /* .block-text-why {
     display: flex;
     flex-direction: column;
     gap: calc(2 * var(--main-gap));
-  }
+  } */
 
-  .block-text-reasons-why {
+  /* .block-text-reasons-why {
     display: grid;
     gap: calc(2 * var(--main-gap));
-  }
+  } */
 
   .content-section-title {
     max-inline-size: 236px;
@@ -327,10 +330,10 @@ footer {
     grid-template-columns: 236px 2fr;
   }
 
-  .block-text-solutions-steps {
+  /* .block-text-solutions-steps {
     display: grid;
     gap: calc(2 * var(--main-gap));
-  }
+  } */
 
   /* ######################## WORK ON 'images' ######################## */
 
@@ -341,6 +344,7 @@ footer {
   .block-section-images {
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(3, auto);
+    gap: 20px;
   }
 
   .sunset-position {
