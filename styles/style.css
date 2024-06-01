@@ -21,12 +21,11 @@
 .header {
   position: relative;
   block-size: 100vh;
-  min-block-size: 668px;
+  min-block-size: 648px;
   display: grid;
   grid-auto-rows: min-content;
   gap: calc(4 * var(--main-gap));
-  /* margin-block-end: calc(5 * var(--main-gap)); */
-  margin-block-end: calc(3 * var(--main-gap));
+  margin-block-end: calc(5 * var(--main-gap));
 }
 
 .decorated-zone::before {
