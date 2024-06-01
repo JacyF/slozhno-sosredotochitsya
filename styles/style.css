@@ -294,7 +294,7 @@ footer {
   /* ######################## WORK ON 'main' ######################## */
 
   .main-content {
-    /* gap: calc(8 * var(--main-gap)); */
+    gap: calc(8 * var(--main-gap));
     margin-bottom: 60px;
     /* margin-block-end: calc(7.8 * var(--main-gap)); */
   }
@@ -368,7 +368,8 @@ footer {
   /* ######################## WORK ON 'footer' ######################## */
 
   .footer {
-    min-block-size: 984px;
+    /* min-block-size: 984px; */
+    min-block-size: 1024px;
   }
 
   .footer-title {
@@ -452,7 +453,8 @@ footer {
   /* ******************* WORK ON 'footer' ******************* */
 
   .footer {
-    min-block-size: 730px;
+    /* min-block-size: 730px; */
+    min-block-size: 768px;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
