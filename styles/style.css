@@ -14,24 +14,18 @@
   font-family: var(--main-font, Arial, Helvetica, sans-serif);
   font-size: 18px;
   font-weight: 400;
-
 }
 
 /* ========================== WORK ON 'header' ========================== */
 
 .header {
-  /* position: relative;
-  display: grid;
-  gap: calc(4 * var(--main-gap));
-  margin-block-end: calc(5* var(--main-gap)); */
   position: relative;
+  block-size: 100vh;
+  min-block-size: 668px;
   display: grid;
-  grid-template-rows: min-content min-content min-content min-content;
-  gap: calc(4* var(--main-gap));
-  margin-block-end: calc(5* var(--main-gap));
- 
-  height: 100vh;
-  min-height: 668px;
+  grid-auto-rows: min-content;
+  gap: calc(4 * var(--main-gap));
+  /* margin-block-end: calc(5 * var(--main-gap)); */
 }
 
 .decorated-zone::before {
@@ -79,9 +73,7 @@
 }
 
 .header__theme-menu {
-  /* margin-block-end: calc(2.5 * var(--main-gap));
-  justify-self: end; */
-  margin-block-end: calc(2.5* var(--main-gap));
+  margin-block-end: calc(2.5 * var(--main-gap));
   justify-self: end;
 }
 
@@ -135,38 +127,20 @@ a:focus-visible {
 }
 
 .header-title {
-  /* margin-block-end: calc(1.5 * var(--main-gap));
+  margin-block-end: calc(1.5 * var(--main-gap));
   justify-self: start;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   color: var(--main-title-color, #DB00FF);
   text-shadow: 4px 4px 0 var(--accent-color, #FF0070);
-  line-height: 95.7px; */
-
-  margin-block-end: calc(1.5* var(--main-gap));
-    justify-self: start;
-    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-    color: var(--main-title-color, #DB00FF);
-    text-shadow: 4px 4px 0 var(--accent-color, #FF0070);
-    line-height: 95.7px;
+  line-height: 95.7px;
 }
 
 .header-text {
-  /* margin-block-end: calc(5.5 * var(--main-gap));
-  justify-self: end;
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: 700;
-  line-height: 23.4px; */
-  
-  width: 355px;
-   margin-block-end: calc(0.5* var(--main-gap));
   justify-self: end;
   font-family: inherit;
   font-size: inherit;
   font-weight: 700;
   line-height: 23.4px;
-  height: 117px;
-
 }
 
 .title-decor {
@@ -264,8 +238,8 @@ img {
 footer {
   position: relative;
   display: grid;
-  height: 100vh;
-  min-block-size: 668px;
+  block-size: 100vh;
+  min-block-size: 648px;
 }
 
 .footer-title {
