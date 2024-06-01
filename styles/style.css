@@ -26,6 +26,7 @@
   grid-auto-rows: min-content;
   gap: calc(4 * var(--main-gap));
   /* margin-block-end: calc(5 * var(--main-gap)); */
+  margin-block-end: calc(3 * var(--main-gap));
 }
 
 .decorated-zone::before {
