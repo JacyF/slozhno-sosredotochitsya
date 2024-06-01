@@ -3,22 +3,8 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,переключая тему
 */
 
-:root.theme-light {
-  /* Переменные светлой темы */
-  /* --main-title-color: #FFC2E6;
-  --content-subtitle-text-color: #353430;
-  --content-title-color: #353430;
-  --main-text-color: #353430;
-  --accent-color: #FF8DCB;
-  --button-text-color: #353430;
-  --main-font: 'IBM Plex mono';
-  --bg-color: #FFEEF6;
-  background-image: url(../images/cover-image-light.png); */
-}
 
 .page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес, чем стили в медиазапросе предпочтений пользователя */
   --main-title-color: #FFC2E6;
   --content-subtitle-text-color: #353430;
   --content-title-color: #353430;
@@ -28,8 +14,8 @@
   --hover-color: rgba(50, 49, 45, 0.4);
   --main-font: 'IBM Plex mono';
   --display-color: transparent;
-  background-image: url(../images/cover-image-light.png);
   --bg-color: #FFEEF6;
+  background-image: url(../images/cover-image-light.png);
 }
 
 @media (prefers-color-scheme: light) {
@@ -44,7 +30,6 @@
     --hover-color: rgba(50, 49, 45, 0.4);
     --main-font: 'IBM Plex mono';
     --bg-color: #FFEEF6;
-    /* --display-color: transparent; */
     background-image: url(../images/cover-image-light.png);
   }
 
@@ -53,19 +38,3 @@
     background-image: url(../images/cover-image-light.png)
   }
 }
-
-
-
-/* Остальные стили */
-
-/* .decorated-element {
-  color: var(--display-color);
-}
-
-.decorated-element::before {
-  color: var(--display-color);
-}
-
-.decorated-element::after {
-  background-color: var(--display-color);
-} */
