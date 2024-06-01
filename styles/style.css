@@ -161,7 +161,11 @@ a:focus-visible {
   gap: calc(2 * var(--main-gap));
 }
 
-.block-text-why {
+.block-text {
+  display: grid;
+  gap: calc(2 * var(--main-gap));
+}
+/* .block-text-why {
   display: grid;
   gap: calc(2 * var(--main-gap));
 }
@@ -174,7 +178,7 @@ a:focus-visible {
 .block-text-solutions-steps {
   display: grid;
   gap: calc(2 * var(--main-gap));
-}
+} */
 
 .block-text-section {
   display: grid;
