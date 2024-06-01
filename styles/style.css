@@ -31,7 +31,7 @@
   margin-block-end: calc(5* var(--main-gap));
  
   height: 100vh;
-  min-height: 648px;
+  min-height: 668px;
 }
 
 .decorated-zone::before {
@@ -265,7 +265,7 @@ footer {
   position: relative;
   display: grid;
   height: 100vh;
-  min-block-size: 648px;
+  min-block-size: 668px;
 }
 
 .footer-title {
