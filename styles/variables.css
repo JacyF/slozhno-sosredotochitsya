@@ -12,8 +12,11 @@
   --main-text-color: #F1B2CE;
   --accent-color: #FF0070;
   --main-gap: 10px;
-  --button-text-color: #FF0070;
+  --button-text-color:#FF0070 ;
+  --hover-color:rgba(255, 0, 112, 0.4);
   --main-font: 'IBM Plex mono';
   --display-color: #FF0070;
   --bg-color:#000028;
+  color: rgba(FF, green, blue, alpha);
 }
+

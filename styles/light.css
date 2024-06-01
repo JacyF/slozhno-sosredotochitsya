@@ -25,6 +25,7 @@
   --main-text-color: #353430;
   --accent-color: #FF8DCB;
   --button-text-color: #353430;
+  --hover-color: rgba(50, 49, 45, 0.4);
   --main-font: 'IBM Plex mono';
   --display-color: transparent;
   background-image: url(../images/cover-image-light.png);
@@ -40,26 +41,20 @@
     --main-text-color: #353430;
     --accent-color: #FF8DCB;
     --button-text-color: #353430;
+    --hover-color: rgba(50, 49, 45, 0.4);
     --main-font: 'IBM Plex mono';
     --bg-color: #FFEEF6;
+    /* --display-color: transparent; */
     background-image: url(../images/cover-image-light.png);
   }
 
-  /* .page.theme_light {
-    --main-title-color: #FFC2E6;
-    --content-subtitle-text-color: #353430;
-    --content-title-color: #353430;
-    --main-text-color: #353430;
-    --accent-color: #FF8DCB;
-    --button-text-color: #353430;
-    --bg-color: #FFEEF6;
-    background-image: url(../images/cover-image-light.png);
-  } */
-
   .page.theme_auto {
+    --display-color: transparent;
     background-image: url(../images/cover-image-light.png)
   }
 }
+
+
 
 /* Остальные стили */
 

@@ -102,6 +102,10 @@
   pointer-events: none;
 }
 
+.header__theme-menu-button:disabled {
+  border: 1px solid var(--button-text-color, #FF0070);
+}
+
 .header__theme-menu-button,
 a:focus {
   outline: none;
@@ -109,7 +113,7 @@ a:focus {
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid var(--button-text-color, #FF0070);
+  outline: 1px solid var(--hover-color, #FF0070) ;
   cursor: pointer;
 }
 
@@ -125,6 +129,7 @@ a:hover {
 a:focus-visible {
   outline: 1px solid currentColor;
 }
+
 
 .header-title {
   margin-block-end: calc(1.5 * var(--main-gap));
@@ -145,7 +150,7 @@ a:focus-visible {
 
 .title-decor {
   background-color: var(--accent-color, #FF0070);
-  color: var(--subtitle-text-color, #000028);
+  color: var(--content-subtitle-text-color, #000028);
 }
 
 /* ========================== WORK ON 'main' section ========================== */
@@ -216,7 +221,8 @@ a:focus-visible {
 }
 
 .content-section-text a {
-  text-shadow: 4px 4px 0 var(--accent-color, #FF0070);
+  text-decoration: none;
+  text-shadow: 2px 2px 0 var(--accent-color, #FF0070);
 }
 
 .section-images {
