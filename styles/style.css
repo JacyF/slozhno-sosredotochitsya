@@ -20,11 +20,11 @@
 
 .header {
   position: relative;
-  block-size: 100vh;
-  min-block-size: 668px;
   display: grid;
   grid-auto-rows: min-content;
   gap: calc(4 * var(--main-gap));
+  block-size: 100vh;
+  min-block-size: 668px;
   margin-block-end: calc(3 * var(--main-gap));
 }
 
@@ -130,7 +130,6 @@ a:focus-visible {
   outline: 1px solid currentColor;
 }
 
-
 .header-title {
   margin-block-end: calc(1.5 * var(--main-gap));
   justify-self: start;
@@ -154,8 +153,6 @@ a:focus-visible {
 }
 
 
-
-
 /* ========================== WORK ON 'main' section ========================== */
 
 .main-content {
@@ -173,20 +170,6 @@ a:focus-visible {
   display: grid;
   gap: calc(2 * var(--main-gap));
 }
-/* .block-text-why {
-  display: grid;
-  gap: calc(2 * var(--main-gap));
-}
-
-.block-text-reasons-why {
-  display: grid;
-  gap: calc(2 * var(--main-gap));
-}
-
-.block-text-solutions-steps {
-  display: grid;
-  gap: calc(2 * var(--main-gap));
-} */
 
 .block-text-section {
   display: grid;
@@ -236,13 +219,12 @@ a:focus-visible {
 
 .block-section-images {
   display: grid;
-  /* gap:calc(2 * var(--main-gap)); */
   gap: var(--main-gap);
 }
 
 img {
   inline-size: 100%;
-  height: 100%;
+  block-size: 100%;
   object-fit: cover;
   object-position: center;
 }
@@ -281,7 +263,6 @@ footer {
   /* ######################## WORK ON 'header' ######################## */
 
   .header {
-    /* margin-block-end: calc(8 * var(--main-gap)); */
     margin-block-end: calc(4 * var(--main-gap));
   }
 
@@ -295,7 +276,7 @@ footer {
 
   .header-title {
     margin-block-end: calc(12.3 * var(--main-gap));
-    margin-left: -18px;
+    margin-inline-start: -18px;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
@@ -308,45 +289,20 @@ footer {
 
   .main-content {
     gap: calc(8 * var(--main-gap));
-    margin-bottom: 60px;
-    /* margin-block-end: calc(7.8 * var(--main-gap)); */
+    margin-block-end: calc(6 * var(--main-gap));
   }
-
-  /* .first-section {
-    grid-template-columns: 236px 2fr;
-  } */
 
   .why {
     grid-template-columns: 236px 2fr;
   }
 
-  /* .block-text-why {
-    display: flex;
-    flex-direction: column;
-    gap: calc(2 * var(--main-gap));
-  } */
-
-  /* .block-text-reasons-why {
-    display: grid;
-    gap: calc(2 * var(--main-gap));
-  } */
-
   .content-section-title {
     max-inline-size: 236px;
   }
 
-  /* .third-section {
-    grid-template-columns: 236px 2fr;
-  } */
-
   .solutions-steps {
     grid-template-columns: 236px 2fr;
   }
-
-  /* .block-text-solutions-steps {
-    display: grid;
-    gap: calc(2 * var(--main-gap));
-  } */
 
   /* ######################## WORK ON 'images' ######################## */
 
@@ -381,7 +337,6 @@ footer {
   /* ######################## WORK ON 'footer' ######################## */
 
   .footer {
-    /* min-block-size: 984px; */
     min-block-size: 1024px;
   }
 
@@ -398,12 +353,8 @@ footer {
   /* ******************* WORK ON 'header' ******************* */
 
   .header {
-    /* grid-template-columns: repeat(3, 1fr);
-    gap: 5px; */
-
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr min-content min-content;
-
     gap: 25px;
   }
 
@@ -412,7 +363,6 @@ footer {
   }
 
   .header__theme-menu {
-    /* block-size: 172px; */
     justify-self: center;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
@@ -425,22 +375,17 @@ footer {
   .header-title {
     grid-column: 1 / 4;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    margin-bottom: 80px;
+    margin-block-end: calc(8 * var(--main-gap));
   }
 
   .header-text {
     inline-size: 491px;
     grid-column: 2 / 4;
     grid-row: 4 / 5;
-    /* margin-bottom: 114px */
-    margin-bottom: 155px;
+    margin-block-end: calc(15.5 * var(--main-gap));
   }
 
   /* ******************* WORK ON 'main' section ******************* */
-
-  /* .first-section {
-    grid-template-columns: 315px 1fr;
-  } */
 
   .why {
     grid-template-columns: 315px 1fr;
@@ -462,10 +407,6 @@ footer {
     grid-template-rows: auto 1fr;
   }
 
-  /* .third-section {
-    grid-template-columns: 315px 1fr;
-  } */
-
   .solutions-steps {
     grid-template-columns: 315px 1fr;
   }
@@ -473,7 +414,6 @@ footer {
   /* ******************* WORK ON 'footer' ******************* */
 
   .footer {
-    /* min-block-size: 730px; */
     min-block-size: 768px;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
