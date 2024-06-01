@@ -389,8 +389,13 @@ footer {
   /* ******************* WORK ON 'header' ******************* */
 
   .header {
+    /* grid-template-columns: repeat(3, 1fr);
+    gap: 5px; */
+
     grid-template-columns: repeat(3, 1fr);
-    gap: 5px;
+    grid-template-rows: 1fr min-content min-content;
+
+    gap: 25px;
   }
 
   .decorated-element {
@@ -398,7 +403,7 @@ footer {
   }
 
   .header__theme-menu {
-    block-size: 172px;
+    /* block-size: 172px; */
     justify-self: center;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
@@ -411,13 +416,15 @@ footer {
   .header-title {
     grid-column: 1 / 4;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    margin-bottom: 80px;
   }
 
   .header-text {
     inline-size: 491px;
     grid-column: 2 / 4;
     grid-row: 4 / 5;
-    margin-bottom: 114px
+    /* margin-bottom: 114px */
+    margin-bottom: 155px;
   }
 
   /* ******************* WORK ON 'main' section ******************* */
