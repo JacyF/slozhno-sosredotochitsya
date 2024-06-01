@@ -21,7 +21,7 @@
 .header {
   position: relative;
   block-size: 100vh;
-  min-block-size: 648px;
+  min-block-size: 668px;
   display: grid;
   grid-auto-rows: min-content;
   gap: calc(4 * var(--main-gap));
@@ -239,7 +239,7 @@ footer {
   position: relative;
   display: grid;
   block-size: 100vh;
-  min-block-size: 648px;
+  min-block-size: 668px;
 }
 
 .footer-title {
