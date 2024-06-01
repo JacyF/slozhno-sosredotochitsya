@@ -25,7 +25,7 @@
   display: grid;
   grid-auto-rows: min-content;
   gap: calc(4 * var(--main-gap));
-  margin-block-end: calc(5 * var(--main-gap));
+  margin-block-end: calc(3 * var(--main-gap));
 }
 
 .decorated-zone::before {
@@ -161,17 +161,17 @@ a:focus-visible {
   gap: calc(2 * var(--main-gap));
 }
 
-.block-text-first {
+.block-text-why {
   display: grid;
   gap: calc(2 * var(--main-gap));
 }
 
-.block-text-second {
+.block-text-reasons-why {
   display: grid;
   gap: calc(2 * var(--main-gap));
 }
 
-.block-text-third {
+.block-text-solutions-steps {
   display: grid;
   gap: calc(2 * var(--main-gap));
 }
@@ -296,17 +296,21 @@ footer {
     margin-block-end: calc(7.8 * var(--main-gap));
   }
 
-  .first-section {
+  /* .first-section {
+    grid-template-columns: 236px 2fr;
+  } */
+
+  .why {
     grid-template-columns: 236px 2fr;
   }
 
-  .block-text-first {
+  .block-text-why {
     display: flex;
     flex-direction: column;
     gap: calc(2 * var(--main-gap));
   }
 
-  .block-text-second {
+  .block-text-reasons-why {
     display: grid;
     gap: calc(2 * var(--main-gap));
   }
@@ -315,11 +319,15 @@ footer {
     max-inline-size: 236px;
   }
 
-  .third-section {
+  /* .third-section {
+    grid-template-columns: 236px 2fr;
+  } */
+
+  .solutions-steps {
     grid-template-columns: 236px 2fr;
   }
 
-  .block-text-third {
+  .block-text-solutions-steps {
     display: grid;
     gap: calc(2 * var(--main-gap));
   }
@@ -405,7 +413,11 @@ footer {
 
   /* ******************* WORK ON 'main' section ******************* */
 
-  .first-section {
+  /* .first-section {
+    grid-template-columns: 315px 1fr;
+  } */
+
+  .why {
     grid-template-columns: 315px 1fr;
   }
 
@@ -417,7 +429,7 @@ footer {
     line-height: 23.4px;
   }
 
-  .block-text-second {
+  .block-text-reasons-why {
     grid-template-columns: repeat(3, 1fr);
   }
 
@@ -425,7 +437,11 @@ footer {
     grid-template-rows: auto 1fr;
   }
 
-  .third-section {
+  /* .third-section {
+    grid-template-columns: 315px 1fr;
+  } */
+
+  .solutions-steps {
     grid-template-columns: 315px 1fr;
   }
 
