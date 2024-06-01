@@ -14,7 +14,7 @@
   font-family: var(--main-font, Arial, Helvetica, sans-serif);
   font-size: 18px;
   font-weight: 400;
-  /* height: 100vh; */
+  height: 100vh;
 }
 
 /* ========================== WORK ON 'header' ========================== */
@@ -29,8 +29,9 @@
   grid-template-rows: min-content min-content min-content min-content;
   gap: calc(4* var(--main-gap));
   margin-block-end: calc(5* var(--main-gap));
-  min-height: 668px;
-  height: 100vh;
+ 
+  /* height: 100vh; */
+  min-height: 648px;
 }
 
 .decorated-zone::before {
@@ -158,7 +159,7 @@ a:focus-visible {
   line-height: 23.4px; */
   
   width: 355px;
-   margin-block-end: calc(0.5* var(--main-gap)); 
+   margin-block-end: calc(0.5* var(--main-gap));
   justify-self: end;
   font-family: inherit;
   font-size: inherit;
@@ -263,8 +264,8 @@ img {
 footer {
   position: relative;
   display: grid;
-  height: 100vh;
-  min-block-size: 668px;
+  /* height: 100vh; */
+  min-block-size: 648px;
 }
 
 .footer-title {
