@@ -14,7 +14,7 @@
   --hover-color: rgba(50, 49, 45, 0.4);
   --main-font: 'IBM Plex mono';
   --display-color: transparent;
-  --bg-color: #FFEEF6;
+  --bg-color: #FFF1F7;
   background-image: url(../images/cover-image-light.png);
 }
 
@@ -29,7 +29,7 @@
     --button-text-color: #353430;
     --hover-color: rgba(50, 49, 45, 0.4);
     --main-font: 'IBM Plex mono';
-    --bg-color: #FFEEF6;
+    --bg-color: #FFF1F7;
     background-image: url(../images/cover-image-light.png);
   }
 
