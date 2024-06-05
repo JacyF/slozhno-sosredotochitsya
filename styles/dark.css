@@ -18,8 +18,19 @@
   background-image: url(../images/cover-image-dark.png);
 }
 
-
-
+/* .page.theme_auto {
+  --main-title-color: #DB00FF;
+  --content-subtitle-text-color: #000028;
+  --content-title-color: #FF0070;
+  --main-text-color: #F1B2CE;
+  --accent-color: #FF0070;
+  --main-gap: 10px;
+  --button-text-color: #FF0070;
+  --hover-color: rgba(255, 0, 112, 0.4);
+  --bg-color:#000028;
+  --main-font: 'IBM Plex mono';
+  background-image: url(../images/cover-image-dark.png);
+} */
 
 
 
